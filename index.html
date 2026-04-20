@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Medixo — Premium Healthcare Platform</title>
+  <meta name="title" content="Medixo — Premium Healthcare Platform">
+  <meta name="description" content="Medixo is a modern healthcare platform providing high-quality medical services, consultation, and care solutions. Book appointments, explore services, and manage your health easily.">
+  <meta name="keywords" content="healthcare, medical services, doctor appointment, online consultation, health platform, hospital services, patient care, Medixo">
+  <meta name="author" content="Medixo Team">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+
+  <!-- Open Graph (Facebook / LinkedIn SEO) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.medixo.com/">
+  <meta property="og:title" content="Medixo — Premium Healthcare Platform">
+  <meta property="og:description" content="Premium healthcare services with modern UI and seamless experience. Book appointments and access medical care easily.">
+  <meta property="og:image" content="https://www.medixo.com/preview.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.medixo.com/">
+  <meta name="twitter:title" content="Medixo — Premium Healthcare Platform">
+  <meta name="twitter:description" content="Advanced healthcare solutions with easy appointment booking and premium experience.">
+  <meta name="twitter:image" content="https://www.medixo.com/preview.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.medixo.com/">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Theme Color (Mobile Browser UI) -->
+  <meta name="theme-color" content="#0ea5e9">
+
+  <!-- Performance Optimization -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Analytics (Replace G-XXXXXXX with your ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">Medi<span>xo</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">✚</div>
+      Medi<span>xo</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="privacy.html" class="nav-link">Privacy</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Book Appointment</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge fade-in">
+          <span class="dot"></span>
+          Trusted by 50,000+ patients worldwide
+        </div>
+        <h1 class="hero-title fade-in" data-delay="100">
+          Your Health,<br>Our <span class="highlight">Priority</span><br>Always.
+        </h1>
+        <p class="hero-desc fade-in" data-delay="200">
+          Experience world-class healthcare from the comfort of your home. Connect with top specialists, schedule appointments, and manage your health journey — all in one place.
+        </p>
+        <div class="hero-actions fade-in" data-delay="300">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <span>Book Appointment</span>
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline btn-lg">
+            <span>Explore Services</span>
+          </a>
+        </div>
+        <div class="hero-stats fade-in" data-delay="400">
+          <div class="hero-stat">
+            <strong><span data-target="50000">0</span>+</strong>
+            <span>Happy Patients</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-target="200">0</span>+</strong>
+            <span>Specialists</span>
+          </div>
+          <div class="hero-stat">
+            <strong><span data-target="15">0</span>+</strong>
+            <span>Years Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in-right" data-delay="200">
+        <div class="hero-card-main">
+          <div class="hero-card-img">
+            <svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Doctor illustration -->
+              <circle cx="140" cy="80" r="48" fill="white" opacity="0.9"/>
+              <circle cx="140" cy="74" r="28" fill="#c8d8ff"/>
+              <ellipse cx="140" cy="164" rx="56" ry="48" fill="white" opacity="0.9"/>
+              <!-- Stethoscope -->
+              <circle cx="140" cy="200" r="10" fill="#1a6bff" opacity="0.6"/>
+              <path d="M130 200 C110 200 108 180 108 165" stroke="#1a6bff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+              <path d="M150 200 C170 200 172 180 172 165" stroke="#1a6bff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+              <path d="M108 165 C108 155 116 148 124 148" stroke="#1a6bff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+              <path d="M172 165 C172 155 164 148 156 148" stroke="#1a6bff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+              <!-- Cross symbol -->
+              <rect x="124" y="32" width="32" height="10" rx="5" fill="#1a6bff" opacity="0.7"/>
+              <rect x="135" y="21" width="10" height="32" rx="5" fill="#1a6bff" opacity="0.7"/>
+              <!-- Decorative circles -->
+              <circle cx="60" cy="120" r="20" fill="rgba(26,107,255,0.08)"/>
+              <circle cx="220" cy="140" r="16" fill="rgba(0,200,150,0.1)"/>
+              <circle cx="180" cy="60" r="12" fill="rgba(255,107,53,0.08)"/>
+            </svg>
+          </div>
+          <div class="hero-card-info">
+            <h3>Your dedicated health partner</h3>
+            <p style="color:var(--text-muted);font-size:0.88rem;">Connecting you with the best care specialists</p>
+            <div class="doctor-row">
+              <div class="doctor-avatars">
+                <div class="doctor-avatar">MK</div>
+                <div class="doctor-avatar">SL</div>
+                <div class="doctor-avatar">AP</div>
+                <div class="doctor-avatar">RJ</div>
+              </div>
+              <span style="font-size:0.82rem;color:var(--text-muted);">+196 specialists online</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Cards -->
+        <div class="hero-float-1">
+          <div class="float-icon blue">🩺</div>
+          <div class="float-text">
+            <strong>24/7 Support</strong>
+            <span>Always available</span>
+          </div>
+        </div>
+
+        <div class="hero-float-2">
+          <div class="float-icon green">✅</div>
+          <div class="float-text">
+            <strong>Appointment Confirmed</strong>
+            <span>Today, 3:00 PM</span>
+          </div>
+        </div>
+
+        <div class="hero-float-3">
+          <div class="float-icon orange">⭐</div>
+          <div class="float-text">
+            <strong>4.9 Rating</strong>
+            <span>From 12k+ reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features / Services Highlights -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Comprehensive Healthcare<br>Services for Everyone</h2>
+      <p class="section-subtitle">From preventive care to specialized treatments — we have everything your health needs under one platform.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card fade-in" data-delay="100">
+        <div class="feature-icon blue">🩺</div>
+        <h3>Online Consultations</h3>
+        <p>Connect with certified doctors via video or chat. Get prescriptions, diagnoses, and health advice from the comfort of your home.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+      <div class="feature-card fade-in" data-delay="200">
+        <div class="feature-icon green">🧪</div>
+        <h3>Lab & Diagnostics</h3>
+        <p>Order lab tests, get results digitally, and receive clear explanations. Home sample collection available in select areas.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+      <div class="feature-card fade-in" data-delay="300">
+        <div class="feature-icon orange">💊</div>
+        <h3>Medicine Delivery</h3>
+        <p>Get your prescribed medications delivered to your doorstep within hours. Genuine medicines from certified pharmacies.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+      <div class="feature-card fade-in" data-delay="100">
+        <div class="feature-icon purple">🧠</div>
+        <h3>Mental Wellness</h3>
+        <p>Licensed therapists and psychiatrists available for anxiety, depression, stress management, and emotional well-being.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+      <div class="feature-card fade-in" data-delay="200">
+        <div class="feature-icon pink">❤️</div>
+        <h3>Chronic Care Management</h3>
+        <p>Personalized care plans for diabetes, hypertension, and other chronic conditions with ongoing monitoring and support.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+      <div class="feature-card fade-in" data-delay="300">
+        <div class="feature-icon teal">🏃</div>
+        <h3>Preventive Health</h3>
+        <p>Annual health checkups, vaccination programs, nutrition planning, and lifestyle coaching for a healthier tomorrow.</p>
+        <a href="services.html" class="feature-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="section how-bg">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">How Medixo Works</h2>
+      <p class="section-subtitle">Getting healthcare has never been simpler. Four easy steps to excellent care.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card fade-in" data-delay="100">
+        <div class="step-number">01</div>
+        <span class="step-icon">👤</span>
+        <h3>Create Your Profile</h3>
+        <p>Sign up in minutes. Add your health history, medications, and preferences for a personalized experience.</p>
+      </div>
+      <div class="step-card fade-in" data-delay="200">
+        <div class="step-number">02</div>
+        <span class="step-icon">🔍</span>
+        <h3>Find a Specialist</h3>
+        <p>Browse our network of 200+ verified doctors. Filter by specialty, availability, language, and ratings.</p>
+      </div>
+      <div class="step-card fade-in" data-delay="300">
+        <div class="step-number">03</div>
+        <span class="step-icon">📅</span>
+        <h3>Book Appointment</h3>
+        <p>Choose your preferred time slot and consultation type — video, audio, or in-person. Instant confirmation.</p>
+      </div>
+      <div class="step-card fade-in" data-delay="400">
+        <div class="step-number">04</div>
+        <span class="step-icon">🏥</span>
+        <h3>Get Expert Care</h3>
+        <p>Consult with your doctor, receive prescriptions, lab orders, or referrals — all digitally managed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual fade-in-left">
+        <div class="why-main-card">
+          <div class="why-card-top">
+            <div class="why-big-number">98%</div>
+            <p style="margin:0;opacity:0.8;margin-top:8px;">Patient Satisfaction Rate</p>
+          </div>
+          <div class="why-card-body">
+            <div class="why-mini-stat">
+              <strong><span data-target="200">0</span>+</strong>
+              <span>Specialists</span>
+            </div>
+            <div class="why-mini-stat">
+              <strong><span data-target="50000">0</span>+</strong>
+              <span>Patients</span>
+            </div>
+            <div class="why-mini-stat">
+              <strong><span data-target="15">0</span>+</strong>
+              <span>Years</span>
+            </div>
+            <div class="why-mini-stat">
+              <strong>24/7</strong>
+              <span>Support</span>
+            </div>
+          </div>
+        </div>
+        <div class="why-float-badge">
+          <span style="font-size:1.5rem;">🏆</span>
+          <div>
+            <strong style="display:block;font-size:0.9rem;font-weight:700;">Award Winning</strong>
+            <span style="font-size:0.78rem;color:var(--text-muted);">Best Health Platform 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in-right">
+        <div class="section-label">Why Medixo</div>
+        <h2 class="section-title" style="margin-bottom:16px;">The Smarter Way<br>to Manage Health</h2>
+        <p class="section-subtitle" style="margin-bottom:40px;">We combine cutting-edge technology with compassionate care to give you a healthcare experience unlike any other.</p>
+
+        <div class="why-reasons">
+          <div class="why-reason">
+            <div class="why-reason-icon blue">🔒</div>
+            <div class="why-reason-text">
+              <h3>100% Private & Secure</h3>
+              <p>Your medical data is encrypted with bank-level security. We are fully HIPAA compliant and never share your data.</p>
+            </div>
+          </div>
+          <div class="why-reason">
+            <div class="why-reason-icon green">⚡</div>
+            <div class="why-reason-text">
+              <h3>Instant Access to Doctors</h3>
+              <p>No waiting rooms. Connect with a verified specialist in under 15 minutes, any time of day or night.</p>
+            </div>
+          </div>
+          <div class="why-reason">
+            <div class="why-reason-icon orange">💰</div>
+            <div class="why-reason-text">
+              <h3>Affordable & Transparent</h3>
+              <p>Clear pricing with no hidden costs. Insurance accepted. Flexible payment plans available for all users.</p>
+            </div>
+          </div>
+          <div class="why-reason">
+            <div class="why-reason-icon purple">📱</div>
+            <div class="why-reason-text">
+              <h3>All-in-One Health App</h3>
+              <p>Manage appointments, prescriptions, health records, and billing — all from a single, intuitive interface.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testi-bg">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">Loved by Thousands<br>of Patients</h2>
+      <p class="section-subtitle">Real stories from real patients who found better health with Medixo.</p>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card fade-in" data-delay="100">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Medixo completely transformed how I manage my diabetes. The specialists are incredibly knowledgeable and the follow-up care is exceptional. I've never felt more supported."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SK</div>
+          <div class="testi-name">
+            <strong>Sarah K.</strong>
+            <span>Chronic Care Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in" data-delay="200">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Booked a consultation at midnight and was connected to a cardiologist within 10 minutes. The care was top-notch and the platform is incredibly easy to use. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MR</div>
+          <div class="testi-name">
+            <strong>Michael R.</strong>
+            <span>Cardiology Patient</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card fade-in" data-delay="300">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"The mental wellness service changed my life. My therapist is amazing, sessions are flexible, and the privacy is reassuring. Finally found a mental health solution that works for me."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AL</div>
+          <div class="testi-name">
+            <strong>Anika L.</strong>
+            <span>Mental Wellness Patient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="cta-section fade-in">
+      <h2>Ready to Take Charge of Your Health?</h2>
+      <p>Join 50,000+ patients who trust Medixo for their healthcare needs. Start your journey today — it's free to sign up.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">Book Your First Appointment</a>
+        <a href="services.html" class="btn btn-lg" style="border:2px solid rgba(255,255,255,0.4);color:white;background:rgba(255,255,255,0.1);">View All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="color:white;">
+          <div class="nav-logo-icon">✚</div>
+          Medi<span>xo</span>
+        </a>
+        <p>Your trusted healthcare platform connecting patients with world-class medical professionals. Quality care, accessible everywhere.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+          <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Online Consultation</a></li>
+          <li><a href="services.html" class="footer-link">Lab Diagnostics</a></li>
+          <li><a href="services.html" class="footer-link">Medicine Delivery</a></li>
+          <li><a href="services.html" class="footer-link">Mental Wellness</a></li>
+          <li><a href="services.html" class="footer-link">Chronic Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span>123 Medical Plaza, Health District, NY 10001</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <span>+1 (800) 624-9460</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">✉️</span>
+          <span>hello@medixo.health</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">🕐</span>
+          <span>Mon–Sun: 24/7 Available</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Medixo Health Inc. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

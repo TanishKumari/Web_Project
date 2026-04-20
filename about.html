@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Medixo Healthcare</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .value-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-align: center;
+    }
+    .value-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-6px);
+    }
+    .value-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .value-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
+    .value-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .timeline-section { background: linear-gradient(135deg, #f0f5ff, #f8faff); }
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--primary), var(--secondary));
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 32px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 6px;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid white;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .timeline-year {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+    .timeline-item h3 { font-size: 1rem; margin-bottom: 8px; }
+    .timeline-item p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+    .partner-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      padding: 40px 0;
+    }
+    .partner-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      transition: var(--transition-fast);
+    }
+    .partner-logo:hover { color: var(--primary); }
+    .partner-logo span { font-size: 1.8rem; }
+    @media(max-width:768px) {
+      .values-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width:480px) {
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">Medi<span>xo</span></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">✚</div>
+      Medi<span>xo</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="privacy.html" class="nav-link">Privacy</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px;">Book Appointment</a>
+</div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label fade-in">About Medixo</div>
+    <h1 class="fade-in" data-delay="100">We're on a Mission to<br>Make Healthcare Human</h1>
+    <p class="fade-in" data-delay="200">Founded in 2009, Medixo has grown from a small telehealth startup into a comprehensive healthcare platform trusted by over 50,000 patients globally.</p>
+  </div>
+</div>
+
+<!-- Company Introduction -->
+<section class="section">
+  <div class="container">
+    <div class="about-intro-grid">
+      <div class="about-visual-wrap fade-in-left">
+        <div class="about-main-img">
+          <svg width="300" height="280" viewBox="0 0 300 280" fill="none">
+            <!-- Medical team illustration -->
+            <circle cx="80" cy="80" r="40" fill="rgba(26,107,255,0.12)"/>
+            <circle cx="80" cy="70" r="22" fill="rgba(26,107,255,0.2)"/>
+            <ellipse cx="80" cy="130" rx="35" ry="28" fill="rgba(26,107,255,0.15)"/>
+
+            <circle cx="150" cy="70" r="40" fill="rgba(0,200,150,0.12)"/>
+            <circle cx="150" cy="60" r="22" fill="rgba(0,200,150,0.2)"/>
+            <ellipse cx="150" cy="120" rx="35" ry="28" fill="rgba(0,200,150,0.15)"/>
+
+            <circle cx="220" cy="80" r="40" fill="rgba(255,107,53,0.12)"/>
+            <circle cx="220" cy="70" r="22" fill="rgba(255,107,53,0.2)"/>
+            <ellipse cx="220" cy="130" rx="35" ry="28" fill="rgba(255,107,53,0.15)"/>
+
+            <!-- Heart -->
+            <path d="M150 210 C150 210 110 185 110 165 C110 152 120 145 130 145 C138 145 145 150 150 155 C155 150 162 145 170 145 C180 145 190 152 190 165 C190 185 150 210 150 210Z" fill="rgba(26,107,255,0.4)"/>
+
+            <!-- Cross -->
+            <rect x="138" cy="220" x="138" y="220" width="24" height="8" rx="4" fill="rgba(26,107,255,0.5)"/>
+            <rect x="142" y="216" width="8" height="24" rx="4" fill="rgba(26,107,255,0.5)"/>
+          </svg>
+        </div>
+        <div class="about-badge">
+          <strong>15+</strong>
+          <span>Years of<br>Excellence</span>
+        </div>
+      </div>
+
+      <div class="fade-in-right">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title" style="margin-bottom:20px;">Healthcare That Puts<br>Patients First</h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:20px;font-size:0.97rem;">
+          Medixo was born from a simple but powerful belief: that every person deserves access to quality healthcare — regardless of where they live or their financial situation. Founded by Dr. James Mitchell and technologist Priya Sharma in 2009, we started as a small telehealth clinic in New York City.
+        </p>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:32px;font-size:0.97rem;">
+          Today, we're a full-scale digital health platform serving patients across 40+ countries, with a network of over 200 verified specialists spanning 25 medical disciplines. Our technology and compassionate care combine to deliver health outcomes that truly matter.
+        </p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Join Our Journey</a>
+          <a href="services.html" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="section" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Purpose & Direction</div>
+      <h2 class="section-title">Guided by Mission,<br>Driven by Vision</h2>
+    </div>
+
+    <div class="mv-grid">
+      <div class="mv-card fade-in" data-delay="100">
+        <div class="mv-card-icon blue" style="background:var(--primary-light);">🎯</div>
+        <h3>Our Mission</h3>
+        <p>To democratize access to quality healthcare by leveraging technology to connect every patient with the right care — at the right time, at the right cost. We break down barriers of geography, cost, and complexity to make health accessible to all.</p>
+      </div>
+      <div class="mv-card fade-in" data-delay="200">
+        <div class="mv-card-icon green" style="background:var(--secondary-light);">🔭</div>
+        <h3>Our Vision</h3>
+        <p>A world where preventive care is the norm, chronic disease is the exception, and every person on earth has a trusted digital health partner in their pocket. We envision a future where health outcomes are driven by data, empathy, and innovation.</p>
+      </div>
+      <div class="mv-card fade-in" data-delay="300">
+        <div class="mv-card-icon orange" style="background:#fff1ec;">💎</div>
+        <h3>Our Promise</h3>
+        <p>We promise unwavering dedication to patient safety, privacy, and dignity. Every decision we make is guided by clinical excellence, ethical standards, and a deep respect for the trust our patients place in us every single day.</p>
+      </div>
+      <div class="mv-card fade-in" data-delay="400">
+        <div class="mv-card-icon purple" style="background:#f3f0ff;">🤝</div>
+        <h3>Our Values</h3>
+        <p>Integrity, innovation, empathy, and excellence. These aren't just words on a wall — they're embedded into every interaction, product decision, and clinical protocol that defines who we are as an organization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Values -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Core Values</div>
+      <h2 class="section-title">What We Stand For</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card fade-in" data-delay="100">
+        <span class="value-icon">🔬</span>
+        <h3>Clinical Excellence</h3>
+        <p>Every specialist on our platform is rigorously vetted, board-certified, and regularly evaluated for quality outcomes.</p>
+      </div>
+      <div class="value-card fade-in" data-delay="200">
+        <span class="value-icon">❤️</span>
+        <h3>Patient-Centered Care</h3>
+        <p>Decisions are made with the patient at the center. Your comfort, dignity, and wellbeing guide everything we do.</p>
+      </div>
+      <div class="value-card fade-in" data-delay="300">
+        <span class="value-icon">🔒</span>
+        <h3>Absolute Privacy</h3>
+        <p>Your health data is yours. We are fully HIPAA and GDPR compliant with military-grade encryption on all records.</p>
+      </div>
+      <div class="value-card fade-in" data-delay="100">
+        <span class="value-icon">🌍</span>
+        <h3>Universal Access</h3>
+        <p>Healthcare is a right, not a privilege. Our pricing and accessibility programs ensure no one is left behind.</p>
+      </div>
+      <div class="value-card fade-in" data-delay="200">
+        <span class="value-icon">⚡</span>
+        <h3>Continuous Innovation</h3>
+        <p>We invest heavily in AI, telemedicine, and digital health technologies to consistently improve care delivery.</p>
+      </div>
+      <div class="value-card fade-in" data-delay="300">
+        <span class="value-icon">🤝</span>
+        <h3>Trust & Transparency</h3>
+        <p>No hidden fees, no false promises. Clear communication and honest practices in everything we do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section" style="background:linear-gradient(135deg,var(--dark),var(--dark-2));">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8);">By the Numbers</div>
+      <h2 class="section-title" style="color:white;">Our Impact in Numbers</h2>
+    </div>
+    <div class="stats-row">
+      <div class="stat-item fade-in" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);" data-delay="100">
+        <strong style="color:var(--secondary);"><span data-target="50000">0</span>+</strong>
+        <span style="color:rgba(255,255,255,0.6);">Patients Served</span>
+      </div>
+      <div class="stat-item fade-in" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);" data-delay="200">
+        <strong style="color:var(--secondary);"><span data-target="200">0</span>+</strong>
+        <span style="color:rgba(255,255,255,0.6);">Verified Specialists</span>
+      </div>
+      <div class="stat-item fade-in" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);" data-delay="300">
+        <strong style="color:var(--secondary);"><span data-target="40">0</span>+</strong>
+        <span style="color:rgba(255,255,255,0.6);">Countries Served</span>
+      </div>
+      <div class="stat-item fade-in" style="background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);" data-delay="400">
+        <strong style="color:var(--secondary);">98%</strong>
+        <span style="color:rgba(255,255,255,0.6);">Satisfaction Rate</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Leadership</div>
+      <h2 class="section-title">Meet Our Expert Team</h2>
+      <p class="section-subtitle">Passionate professionals dedicated to transforming healthcare for everyone.</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card fade-in" data-delay="100">
+        <div class="team-img" style="background:linear-gradient(135deg,#c8d8ff,#ddeeff);">👨‍⚕️</div>
+        <div class="team-body">
+          <h3>Dr. James Mitchell</h3>
+          <span>Co-Founder & CEO</span>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:14px;">Board-certified cardiologist with 20+ years of clinical and leadership experience.</p>
+          <div class="team-socials">
+            <a href="#" class="team-social">𝕏</a>
+            <a href="#" class="team-social">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card fade-in" data-delay="200">
+        <div class="team-img" style="background:linear-gradient(135deg,#c8f0e0,#ddfff2);">👩‍💻</div>
+        <div class="team-body">
+          <h3>Priya Sharma</h3>
+          <span>Co-Founder & CTO</span>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:14px;">Health tech pioneer, MIT graduate, and architect of Medixo's core AI infrastructure.</p>
+          <div class="team-socials">
+            <a href="#" class="team-social">𝕏</a>
+            <a href="#" class="team-social">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card fade-in" data-delay="300">
+        <div class="team-img" style="background:linear-gradient(135deg,#ffe8d6,#fff1e8);">👩‍⚕️</div>
+        <div class="team-body">
+          <h3>Dr. Sarah Chen</h3>
+          <span>Chief Medical Officer</span>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:14px;">Internist & digital health advocate ensuring clinical excellence across all services.</p>
+          <div class="team-socials">
+            <a href="#" class="team-social">𝕏</a>
+            <a href="#" class="team-social">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card fade-in" data-delay="400">
+        <div class="team-img" style="background:linear-gradient(135deg,#f0e8ff,#ece8ff);">👨‍💼</div>
+        <div class="team-body">
+          <h3>Marcus Johnson</h3>
+          <span>Chief Operations Officer</span>
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-bottom:14px;">Operations expert scaling Medixo's global delivery and patient experience teams.</p>
+          <div class="team-socials">
+            <a href="#" class="team-social">𝕏</a>
+            <a href="#" class="team-social">in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline / History -->
+<section class="section timeline-section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <div class="section-label">Our Journey</div>
+      <h2 class="section-title">15 Years of Innovation</h2>
+      <p class="section-subtitle">From a small NYC clinic to a global healthcare platform.</p>
+    </div>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-year">2009</div>
+        <h3>Founded in New York City</h3>
+        <p>Dr. James Mitchell and Priya Sharma launch Medixo as a telehealth pilot program serving 500 patients in NYC.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2012</div>
+        <h3>Series A Funding — $8M Raised</h3>
+        <p>Secured $8M in Series A funding, expanded to 5 states and launched the mobile application for iOS and Android.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2015</div>
+        <h3>100 Specialists Onboarded</h3>
+        <p>Reached a major milestone — 100 verified specialists across 20 disciplines and 10,000+ registered patients.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2018</div>
+        <h3>International Expansion</h3>
+        <p>Expanded into Canada, UK, and Australia. Launched the Family Health Plan and partnered with 3 major insurance providers.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <h3>AI Health Assistant Launched</h3>
+        <p>Introduced Medixo AI — a symptom checker and health navigator powered by clinically validated machine learning models.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <h3>50,000+ Patients & 40+ Countries</h3>
+        <p>Reached global scale. Named Best Digital Health Platform 2024. Serving patients across 40+ countries with 200+ specialists.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+<section class="section-sm">
+  <div class="container">
+    <p class="text-center" style="color:var(--text-muted);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0;" class="fade-in">Trusted & accredited by leading health organizations</p>
+    <div class="partner-logos fade-in">
+      <div class="partner-logo"><span>🏥</span> HealthFirst</div>
+      <div class="partner-logo"><span>💊</span> PharmaCare</div>
+      <div class="partner-logo"><span>🔬</span> LabCore</div>
+      <div class="partner-logo"><span>🧬</span> GenHealth</div>
+      <div class="partner-logo"><span>🛡️</span> MedShield</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="color:white;">
+          <div class="nav-logo-icon">✚</div>
+          Medi<span>xo</span>
+        </a>
+        <p>Your trusted healthcare platform connecting patients with world-class medical professionals. Quality care, accessible everywhere.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">📷</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+          <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Online Consultation</a></li>
+          <li><a href="services.html" class="footer-link">Lab Diagnostics</a></li>
+          <li><a href="services.html" class="footer-link">Medicine Delivery</a></li>
+          <li><a href="services.html" class="footer-link">Mental Wellness</a></li>
+          <li><a href="services.html" class="footer-link">Chronic Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span>123 Medical Plaza, Health District, NY 10001</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <span>+1 (800) 624-9460</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">✉️</span>
+          <span>hello@medixo.health</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Medixo Health Inc. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
